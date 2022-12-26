@@ -17,12 +17,14 @@
           Abrir uma conta
           <img src="../assets/imgs/arrow-right.svg" />
         </button>
-        <button>
-          <img src="../assets/imgs/apple-store.svg" />
-        </button>
-        <button>
-          <img src="../assets/imgs/play-store.svg" />
-        </button>
+        <div>
+          <button>
+            <img src="../assets/imgs/apple-store.svg" />
+          </button>
+          <button>
+            <img src="../assets/imgs/play-store.svg" />
+          </button>
+        </div>
       </div>
     </div>
     <div class="right_side">
@@ -42,6 +44,7 @@
     .line_1,
     .line_2 {
       position: absolute;
+      @apply max-lg:hidden;
     }
 
     .line_1 {
@@ -56,7 +59,7 @@
     .left_side,
     .right_side {
       width: 50%;
-      min-height: 100vh;
+      min-height: 110vh;
       display: flex;
       justify-content: center;
     }
@@ -64,7 +67,7 @@
     .left_side {
       flex-direction: column;
       background-color: #f2f4fd;
-      @apply lg:pl-20 xl:pl-40;
+      @apply max-lg:w-full px-10 xl:px-40;
 
       h1 {
         font-family: Sora, sans-serif;
@@ -85,6 +88,7 @@
 
       div {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         gap: 32px;
 
@@ -108,6 +112,7 @@
     .right_side {
       align-items: center;
       background-image: colors.$gradient;
+      @apply max-lg:hidden;
 
       img {
         z-index: 10;

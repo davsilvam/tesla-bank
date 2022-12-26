@@ -60,26 +60,29 @@
 
   section {
     width: 100%;
-    min-height: 100vh;
+    min-height: 110vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 160px;
-    @apply lg:px-20 xl:px-40;
+    @apply max-lg:flex-col max-lg:gap-20 md:px-40 px-10 xl:px-40 py-20;
 
     .left_side {
       width: 50%;
+      @apply max-lg:w-full;
       display: flex;
       align-items: center;
       justify-content: center;
 
       img {
         width: 320px;
+        @apply max-lg:w-[240px];
       }
     }
 
     .right_side {
       width: 50%;
+      @apply max-lg:w-full max-lg:items-center;
       display: flex;
       flex-direction: column;
       gap: 56px;
@@ -109,7 +112,7 @@
 
       .topics {
         display: flex;
-        flex-direction: flex-col;
+        flex-direction: column;
         gap: 32px;
 
         .topic {

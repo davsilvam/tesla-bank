@@ -30,7 +30,7 @@
     justify-content: space-between;
     gap: 160px;
     background-color: #f2f4fd;
-    @apply py-32 lg:px-20 xl:px-40;
+    @apply max-lg:flex-col-reverse max-lg:gap-20 py-32 px-10 xl:px-40;
 
     div {
       display: flex;
@@ -40,6 +40,7 @@
       h2 {
         font-family: Sora, sans-serif;
         font-size: 40px;
+        @apply max-lg:text-[28px];
         font-weight: 600;
         color: #282421;
 
@@ -62,12 +63,14 @@
         img {
           cursor: pointer;
           width: 200px;
+          @apply max-lg:w-[140px];
         }
       }
     }
 
     img {
       width: 320px;
+      @apply max-lg:w-[180px];
     }
   }
 </style>

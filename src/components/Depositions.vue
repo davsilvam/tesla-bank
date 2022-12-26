@@ -51,7 +51,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 80px;
-    @apply py-32 lg:px-20 xl:px-40;
+    @apply py-32 px-10 xl:px-40;
 
     .headings {
       display: flex;
@@ -77,6 +77,7 @@
 
     .depositions {
       display: flex;
+      @apply max-lg:flex-col;
       align-items: center;
       justify-content: space-between;
       gap: 52px;

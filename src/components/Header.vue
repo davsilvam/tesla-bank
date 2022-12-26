@@ -1,3 +1,7 @@
+<script setup>
+  import { Bars3Icon } from '@heroicons/vue/24/outline'
+</script>
+
 <template>
   <header>
     <div class="controls">
@@ -22,6 +26,7 @@
       </nav>
     </div>
     <button>Login <img src="../assets/imgs/profile.svg" /></button>
+    <Bars3Icon class="lg:hidden w-10 text-[#E51D37]" />
   </header>
 </template>
 
@@ -36,7 +41,7 @@
     display: flex;
     justify-content: space-between;
     padding: 36px 0;
-    @apply lg:px-20 xl:px-40;
+    @apply px-10 xl:px-40;
 
     .controls {
       display: flex;
@@ -46,7 +51,7 @@
       nav ul {
         display: flex;
         gap: 32px;
-        @apply lg:gap-8 xl:gap-11;
+        @apply max-lg:hidden lg:gap-8 xl:gap-11;
 
         li {
           display: flex;
@@ -64,6 +69,7 @@
       gap: 12px;
       font-weight: 500;
       color: white;
+      @apply max-lg:hidden;
     }
   }
 </style>

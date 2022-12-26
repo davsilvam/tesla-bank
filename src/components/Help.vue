@@ -61,12 +61,12 @@
   @use '../assets/css/colors';
 
   section {
-    min-height: 100vh;
+    min-height: 110vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 72px;
-    @apply py-20 lg:px-20 xl:px-40;
+    @apply py-20 px-10 xl:px-40;
 
     .headings {
       display: flex;

@@ -45,7 +45,7 @@
         <a>VEJA AS OPÇÕES</a>
       </div>
 
-      <div class="row-start-2 col-start-2 card">
+      <div class="lg:row-start-2 lg:col-start-2 card">
         <img src="../assets/imgs/shield.svg" />
         <div>
           <h3>Segurança</h3>
@@ -56,7 +56,7 @@
         </div>
         <a>VEJA AS OPÇÕES</a>
       </div>
-      <div class="row-start-2 col-start-3 card">
+      <div class="lg:row-start-2 lg:col-start-3 card">
         <img src="../assets/imgs/percent.svg" />
         <div>
           <h3>Sem taxas</h3>
@@ -67,7 +67,7 @@
         </div>
         <a>VEJA AS OPÇÕES</a>
       </div>
-      <div class="row-start-2 col-start-4 card">
+      <div class="lg:row-start-2 lg:col-start-4 card">
         <img src="../assets/imgs/gift.svg" />
         <div>
           <h3>Receba prêmios</h3>
@@ -87,13 +87,13 @@
 
   section {
     position: relative;
-    min-height: 100vh;
+    min-height: 110vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 52px;
     background-color: #f2f4fd;
-    @apply py-32 lg:px-20 xl:px-40;
+    @apply py-32 px-10 xl:px-40;
 
     .wave {
       position: absolute;
@@ -130,6 +130,7 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, 1fr);
+      @apply max-sm:grid-cols-1 max-lg:grid-cols-2 max-lg:grid-rows-3;
       gap: 32px;
 
       .card {

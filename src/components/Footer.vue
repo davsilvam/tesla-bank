@@ -19,10 +19,11 @@
     display: flex;
     justify-content: space-between;
     padding: 24px 0;
-    @apply lg:px-20 xl:px-40;
+    @apply px-10 xl:px-40;
     background-color: white;
 
     .copy {
+      @apply max-md:hidden;
       font-weight: 400;
 
       strong {
@@ -34,11 +35,17 @@
 
     .logos {
       width: 40%;
+      @apply max-md:w-[100%];
       display: flex;
+      align-items: center;
       justify-content: flex-end;
       gap: 12px;
       color: colors.$red;
       font-weight: 500;
+
+      img {
+        @apply max-lg:w-[20px];
+      }
     }
   }
 </style>
