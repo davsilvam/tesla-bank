@@ -13,30 +13,30 @@
           <div class="bar"></div>
           <h3>NIKOLA TESLA</h3>
         </div>
-        <q
-          >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-          scelerisque nisl quis viverra tincidunt.</q
-        >
+        <q>
+          Para mim, a TeslaBank é ótima, e não só por carregar meu nome "haha".
+          Ela realmente oferece os melhores serviços.
+        </q>
       </div>
       <div class="deposition">
         <div>
           <div class="bar"></div>
           <h3>STEVE JOBS</h3>
         </div>
-        <q
-          >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-          scelerisque nisl quis viverra tincidunt.</q
-        >
+        <q>
+          Eu simplesmente amo a TeslaBank, ela me auxilia muito em gerenciar os
+          rios de dinheiro que tenho.
+        </q>
       </div>
       <div class="deposition">
         <div>
           <div class="bar"></div>
           <h3>ALAN TURING</h3>
         </div>
-        <q
-          >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-          scelerisque nisl quis viverra tincidunt.</q
-        >
+        <q>
+          Para quem gosta de números como eu, a TeslaBank é o lugar certo, o app
+          me mostra sempre as melhores estatísticas.
+        </q>
       </div>
     </div>
   </section>

@@ -9,8 +9,7 @@
         Somos digital, somos TeslaBank.
       </h2>
       <p>
-        Donec venenatis at turpis at ornare. Pellentesque a quam vel dui lacinia
-        dapibus in sit amet dolor.
+        Disponível para Android e iOS, baixe o app TeslaBank no seu dispositivo móvel e abra sua conta agora mesmo.
       </p>
       <div>
         <img src="../assets/imgs/apple-download.svg" />
