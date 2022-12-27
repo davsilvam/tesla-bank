@@ -134,6 +134,11 @@
             font-weight: 500;
             color: colors.$gray;
           }
+
+          p {
+            font-size: 14px;
+            color: #5F5F5F;
+          }
         }
       }
     }

@@ -5,8 +5,19 @@
 <template>
   <footer>
     <p class="copy">
-      Copyright &copy; {{ year }} <strong>IuriCode</strong> &
-      <strong>David Silva</strong>. Todos os direitos reservados.
+      Copyright &copy; {{ year }}
+      <a
+        href="https://iuricode.com"
+        target="_blank"
+        >IuriCode</a
+      >
+      &
+      <a
+        href="https://portfolio-ds-one.vercel.app"
+        target="_blank"
+        >David Silva</a
+      >.
+      <span>Todos os direitos reservados.</span>
     </p>
     <p class="logos">Powered by <img src="../assets/imgs/iuri_logo.svg" /></p>
   </footer>
@@ -23,19 +34,23 @@
     background-color: white;
 
     .copy {
-      @apply max-md:hidden;
+      @apply max-sm:hidden;
       font-weight: 400;
 
-      strong {
+      a {
         font-family: Sora, sans-serif;
         font-weight: 600;
         color: #282421;
+      }
+
+      span {
+        @apply max-lg:hidden;
       }
     }
 
     .logos {
       width: 40%;
-      @apply max-md:w-[100%];
+      @apply max-sm:w-[100%];
       display: flex;
       align-items: center;
       justify-content: flex-end;

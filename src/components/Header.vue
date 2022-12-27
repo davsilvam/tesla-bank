@@ -46,14 +46,14 @@
     .controls {
       display: flex;
       align-items: center;
-      gap: 56px;
+      @apply lg:gap-8 xl:gap-11;
 
       nav ul {
         display: flex;
-        gap: 32px;
         @apply max-lg:hidden lg:gap-8 xl:gap-11;
 
         li {
+          cursor: pointer;
           display: flex;
           align-items: center;
           gap: 12px;
