@@ -1,54 +1,56 @@
+<script setup>
+  import { CheckBadgeIcon, UserCircleIcon } from '@heroicons/vue/24/outline'
+</script>
+
 <template>
   <section>
     <div class="headings">
       <h4>#AJUDA</h4>
       <h2>Ficou alguma dúvida?</h2>
-      <p>Nullam ornare eu nisi fringilla consectetur. Suspendisse potenti.</p>
+      <p>Abaixo estão alguns tópicos que podem ajudar você.</p>
     </div>
 
     <div class="boxes">
       <div class="line"></div>
       <div class="box">
-        <div class="icon">
-          <img
-            src="../assets/imgs/smartphone.svg"
-            alt="" />
-        </div>
-        <div class="content">
-          <h3>Lorem ipsum dolor sit amet</h3>
-          <p>
-            Vestibulum faucibus risus eu mi volutpat, vel tristique dui rutrum.
-          </p>
-        </div>
-        <img src="../assets/imgs/chevron.svg" />
-      </div>
-      <div class="line"></div>
-      <div class="box">
-        <div class="icon">
-          <img
-            src="../assets/imgs/smartphone.svg"
-            alt="" />
-        </div>
-        <div class="content">
-          <h3>Lorem ipsum dolor sit amet</h3>
-          <p>
-            Vestibulum faucibus risus eu mi volutpat, vel tristique dui rutrum.
-          </p>
+        <div class="left">
+          <div class="icon">
+            <img src="../assets/imgs/teslabank_logo.svg" />
+          </div>
+          <div class="content">
+            <h3>Conheça a TeslaBank</h3>
+            <p>
+              Tópico com informações sobre a TeslaBank, objetivo e funcionários.
+            </p>
+          </div>
         </div>
         <img src="../assets/imgs/chevron.svg" />
       </div>
       <div class="line"></div>
       <div class="box">
-        <div class="icon">
-          <img
-            src="../assets/imgs/smartphone.svg"
-            alt="" />
+        <div class="left">
+          <div class="icon">
+            <CheckBadgeIcon class="w-8 text-[#E51D37]" />
+          </div>
+          <div class="content">
+            <h3>Serviços</h3>
+            <p>
+              Este tópico possui a lista de serviços fornecidos pela TeslaBank.
+            </p>
+          </div>
         </div>
-        <div class="content">
-          <h3>Lorem ipsum dolor sit amet</h3>
-          <p>
-            Vestibulum faucibus risus eu mi volutpat, vel tristique dui rutrum.
-          </p>
+        <img src="../assets/imgs/chevron.svg" />
+      </div>
+      <div class="line"></div>
+      <div class="box">
+        <div class="left">
+          <div class="icon">
+            <UserCircleIcon class="w-8 text-[#E51D37]" />
+          </div>
+          <div class="content">
+            <h3>Abrir uma conta</h3>
+            <p>Dificuldades em abrir a conta? Cheque este tópico.</p>
+          </div>
         </div>
         <img src="../assets/imgs/chevron.svg" />
       </div>
@@ -96,7 +98,7 @@
     .boxes {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: stretch;
       gap: 32px;
 
       .line {
@@ -107,37 +109,50 @@
       }
 
       .box {
+        cursor: pointer;
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 28px;
 
-        .icon {
+        .left {
           display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-shrink: 0;
-          padding: 12px;
-          border: 1px transparent;
-          border-radius: 12px;
-          background-color: white;
-          @apply shadow-md;
-        }
+          gap: 24px;
 
-        .content {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
+          .icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            padding: 12px;
+            border: 1px transparent;
+            border-radius: 12px;
+            background-color: white;
+            @apply shadow-md;
 
-          h3 {
-            font-size: 18px;
-            font-weight: 500;
-            color: colors.$gray;
+            img {
+              height: 35px;
+            }
           }
 
-          p {
-            font-size: 14px;
-            color: #5f5f5f;
+          .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 4px;
+
+            h3 {
+              font-size: 18px;
+              font-weight: 500;
+              color: colors.$gray;
+            }
+
+            p {
+              font-size: 14px;
+              color: #5f5f5f;
+            }
           }
         }
       }
