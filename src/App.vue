@@ -1,4 +1,5 @@
 <script setup>
+  import { ref } from 'vue'
   import TheHeader from './components/Header.vue'
   import Hero from './components/Hero.vue'
   import Overview from './components/Overview.vue'
@@ -7,11 +8,21 @@
   import Download from './components/Download.vue'
   import Help from './components/Help.vue'
   import TheFooter from './components/Footer.vue'
+  import MobileMenu from './components/MobileMenu.vue'
+
+  const menuStatus = ref(false)
+
+  const onToogleMenu = () => {
+    menuStatus.value = !menuStatus.value
+  }
 </script>
 
 <template>
   <div>
-    <TheHeader />
+    <MobileMenu
+      :menuStatus="menuStatus"
+      @toogleMenu="onToogleMenu" />
+    <TheHeader @toogleMenu="onToogleMenu" />
     <Hero />
     <Overview />
     <Benefits />

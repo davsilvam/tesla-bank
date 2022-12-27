@@ -1,13 +1,17 @@
 <script setup>
   import { Bars3Icon } from '@heroicons/vue/24/outline'
+
+  const emits = defineEmits(['toogleMenu'])
+
+  const toogleMenu = () => {
+    emits('toogleMenu')
+  }
 </script>
 
 <template>
   <header>
     <div class="controls">
-      <img
-        src="../assets/imgs/teslabank_logo.svg"
-        alt="" />
+      <img src="../assets/imgs/teslabank_logo.svg" />
       <nav>
         <ul>
           <li>
@@ -26,7 +30,9 @@
       </nav>
     </div>
     <button>Login <img src="../assets/imgs/profile.svg" /></button>
-    <Bars3Icon class="lg:hidden w-10 text-[#E51D37]" />
+    <Bars3Icon
+      @click="toogleMenu"
+      class="lg:hidden w-10 text-[#E51D37]" />
   </header>
 </template>
 

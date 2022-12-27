@@ -137,7 +137,7 @@
 
           p {
             font-size: 14px;
-            color: #5F5F5F;
+            color: #5f5f5f;
           }
         }
       }
