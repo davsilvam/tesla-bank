@@ -14,17 +14,17 @@ Esta é a Landing Page da TeslaBank, um banco fictício 100% digital. O design e
 
 ## :art: **Visual do Projeto**
 
-<!-- ### _Desktop e Telas Maiores_
+### _Desktop e Telas Maiores_
 
 <h1 align="center">
-    <img src="./.github/desktop_screenshot.png" style="width: 80%">
+    <img src="./.github/desktop.gif" style="width: 80%">
 </h1>
 
 ### _Mobile e Telas Menores_
 
 <h1 align="center">
-    <img src="./.github/mobile_screenshot.png" style="width: 50%">
-</h1> -->
+    <img src="./.github/mobile.gif" style="width: 50%">
+</h1>
 
 ## :wrench: **Tecnologias**
 
