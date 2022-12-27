@@ -19,7 +19,10 @@
       >.
       <span>Todos os direitos reservados.</span>
     </p>
-    <p class="logos">Powered by <img src="../assets/imgs/iuri_logo.svg" /></p>
+    <p class="logos">
+      Powered by <img src="../assets/imgs/iuri_logo.svg" /> and
+      <img src="../assets/imgs/ds.png" />
+    </p>
   </footer>
 </template>
 
@@ -59,7 +62,7 @@
       font-weight: 500;
 
       img {
-        @apply max-lg:w-[20px];
+        width: 20px;
       }
     }
   }
