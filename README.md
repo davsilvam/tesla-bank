@@ -61,7 +61,7 @@ Veja [documentação de configuração do Vite](https://vitejs.dev/config/) e a 
 ### **Clonando o Projeto**
 
 ```sh
-git clone https://github.com/davsilvam/tesla-bank
+git clone https://github.com/davsilvam/tesla-bank.git
 ```
 
 ### **Executando o Projeto**
